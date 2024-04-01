@@ -50,15 +50,15 @@ fun ListTile(
                 .align(Alignment.CenterVertically)
                 //.background(Color.Red)
             ) {
-                Column(
-                    //verticalArrangement = Arrangement.SpaceAround,
-                    //horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Spacer(modifier = Modifier.fillMaxHeight(0.15f).fillMaxSize().background(Color(0xfffafaf4)))
+                Column {
+                    Spacer(modifier = Modifier
+                        .fillMaxHeight(0.15f)
+                        .fillMaxSize()
+                        .background(Color(0xfffafaf4)))
                     Box(modifier = Modifier
                         .fillMaxHeight(0.45f)
-
-                        .fillMaxSize(), contentAlignment = Alignment.CenterStart,) {
+                        .fillMaxSize(),
+                        contentAlignment = Alignment.CenterStart) {
                         title()
                     }
                     Box(modifier = Modifier
